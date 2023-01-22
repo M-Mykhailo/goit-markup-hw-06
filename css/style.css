@@ -475,10 +475,6 @@ img {
   min-width: 1440px;
 }
 
-.logo-thumb {
-  margin-right: auto;
-}
-
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -583,6 +579,18 @@ img {
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color-footer);
+
+  transition: border-color var(--timing-function);
+}
+
+.footer-input:focus {
+  border-color: #4d5ae5;
 }
 
 .footer-input::placeholder {
@@ -615,7 +623,8 @@ img {
 
   color: #ffffff;
 
-  transition: background-color var(--timing-function), box-shadow var(--timing-function);
+  transition: background-color var(--timing-function),
+    box-shadow var(--timing-function);
 }
 
 .subscribe-icon {
@@ -859,6 +868,12 @@ img {
   background-color: transparent;
   outline: transparent;
 
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+
   transition: border-color var(--timing-function);
 }
 
@@ -890,8 +905,13 @@ img {
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-
   resize: none;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 
   transition: border-color var(--timing-function);
 }
@@ -946,28 +966,10 @@ img {
 }
 
 .check-link {
-  color: #4D5AE5;
+  color: #4d5ae5;
 }
 
-/* .check-text::before {
-  content: " ";
-  width: 16px;
-  height: 16px;
-  border: 1.25px solid #2e2f42;
-  border-radius: 2px;
-  display: block;
-}
-
-.check-input:checked + .check-text::before {
-  background: #404bbf;
-  border: 1.25px solid #404bbf;
-  border-radius: 2px;
-  background-image: url(../image/checked.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-.label-wrap.checkbox {
+.label-wrap.privacy {
   margin-bottom: 24px;
 }
 
@@ -989,7 +991,8 @@ img {
   letter-spacing: 0.04em;
   color: #ffffff;
 
-  transition: background-color var(--timing-function), box-shadow var(--timing-function);
+  transition: background-color var(--timing-function),
+    box-shadow var(--timing-function);
 }
 
 .form-btn:hover,
@@ -998,5 +1001,3 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
-
